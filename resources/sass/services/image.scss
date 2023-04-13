@@ -1,0 +1,45 @@
+.img-wrap {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.img-wrap:first-child {
+  display: none;
+}
+
+.img-wrap .close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  background-color: #FFF;
+  padding: 5px 2px 2px;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: .2;
+  text-align: center;
+  font-size: 22px;
+  line-height: 10px;
+  border-radius: 50%;
+}
+
+.img-wrap:hover .close {
+  opacity: 1;
+}
+
+.img-wrap img {
+  width: 200px;
+  display: inline-block;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1266px) {
+
+  .postDelete,
+  .recruitDelete,
+  .activityDelete {
+    margin-top: 5px;
+  }
+}
